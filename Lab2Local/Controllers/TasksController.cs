@@ -22,7 +22,7 @@ namespace Lab2Local.Controllers
 
 
 		// GET: api/Tasks
-		[HttpGet("/tasc")]
+		[HttpGet]
 		public IEnumerable<Tasc> Get([FromQuery]DateTime? from,[FromQuery]DateTime? to)
 		{
 			IQueryable<Tasc> result = context.TasksNou;
